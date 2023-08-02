@@ -1,0 +1,26 @@
+name: Deploy rust.leix.wang website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+      with:
+        persist-credentials: false
+    - name: Install and Build
+      run: |
+        npm install
+        npm run-script build
+        cd ./markdown/.vitepress/dist
+        echo 'think.leix.wang' > CNAME
+        git init
+        git config user.name "TuringThink"
+        git config user.email "think@leix.wang"
+        git add -A
+        git commit -m 'deploy'
+        git push -f https://leixwang:${{ secrets.BUILD_LEIXWEB }}@github.com/leixwang/think.github.io.git master:gh-pages
+        cd -

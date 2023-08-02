@@ -1,0 +1,20 @@
+{
+  "name": "think",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:leixwang/vue.github.io.git",
+  "author": "Richard <richard@newborntown.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev markdown --host 0.0.0.0",
+    "build": "vitepress build markdown",
+    "serve": "vitepress serve markdown"
+  },
+  "devDependencies": {
+    "less": "^4.1.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "mermaid": "^10.2.4",
+    "vitepress": "^1.0.0-beta.5",
+    "vitepress-plugin-mermaid": "^2.0.13"
+  }
+}
