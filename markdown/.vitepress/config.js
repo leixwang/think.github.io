@@ -93,8 +93,8 @@ const customElements = [
 
 export default withMermaid({
   // your existing vitepress config...
-  title: 'TuringThink教学文档',
-  description: '',
+  title: 'TuringThink',
+  description: 'TuringThink是一家领先的少儿编程教育公司，致力于激发创造力,逻辑思维能力和多维度的学习能力。通过有趣而实践的课程，我们帮助学生掌握编程技能并培养他们解决问题的能力。',
 	lastUpdated: true,
 	markdown: {
     theme: {
@@ -113,21 +113,156 @@ export default withMermaid({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: 'NOIP C++ 介绍', link: '/clang/index' },
-          { text: '基本知识', link: '/clang/base' },
-          { text: '循环语句', link: '/clang/loop' },
-          { text: '教学文档样例', link: '/clang/demo' },
+          { text: '介绍', link: '/clang/index' },
+          {
+            text: '一级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-1/index' },
+            ]
+          },
+          {
+            text: '二级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-2/index' },
+            ]
+          },
+          {
+            text: '三级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-3/index' },
+            ]
+          },
+          {
+            text: '四级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-4/index' },
+            ]
+          },
+          {
+            text: '五级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-5/index' },
+            ]
+          },
+          {
+            text: '六级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/clang/level-6/index' },
+            ]
+          },
         ]
       },
       {
-        text: 'Pyhton',
+        text: 'Python',
         collapsible: true,
         collapsed: true,
         items: [
-          { text: 'Python 介绍', link: '/python/index' },
-          { text: 'Python loop', link: '/python/loop' },
+          { text: '介绍', link: '/python/index' },
+          {
+            text: '一级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+              { text: '基本知识', link: '/python/level-1/index' },
+              { text: '基本知识', link: '/python/level-1/index' },
+            ]
+          },
+          {
+            text: '二级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/python/level-2/index' },
+            ]
+          },
+          {
+            text: '三级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/python/level-3/index' },
+            ]
+          },
+          {
+            text: '四级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/python/level-4/index' },
+            ]
+          },
+          {
+            text: '五级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/python/level-5/index' },
+            ]
+          },
+          {
+            text: '六级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/python/level-6/index' },
+            ]
+          },
         ]
-      }
+      },
+      {
+        text: 'Scratch',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/scratch/index' },
+          {
+            text: '一级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/scratch/level-1/index' },
+            { text: '基本知识', link: '/scratch/level-1/index' },
+            ]
+          },
+          {
+            text: '二级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/scratch/level-2/index' },
+            ]
+          },
+          {
+            text: '三级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/scratch/level-3/index' },
+            ]
+          },
+          {
+            text: '四级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '基本知识', link: '/scratch/level-4/index' },
+            ]
+          },
+        ]
+      },
+
     ],
 		
 		footer: {
