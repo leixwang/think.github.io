@@ -24,6 +24,11 @@
   --vp-c-brand-dark: #570DF8;
 	--vp-code-block-bg: #efefef;
 
+  /* details color */
+  --vp-custom-block-details-border: #0055ff;
+  --vp-custom-block-details-text: #00297c;
+  --vp-custom-block-details-bg: #f9f9fa;
+
   /* font color */
   --vp-c-indigo: #181c21;
 
