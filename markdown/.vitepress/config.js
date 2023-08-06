@@ -177,8 +177,8 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-              { text: '基本知识', link: '/python/level-1/index' },
-              { text: '基本知识', link: '/python/level-1/index' },
+              { text: '一级大纲', link: '/python/level-1/index' },
+              { text: '循环语句', link: '/python/level-1/loop' },
             ]
           },
           {
