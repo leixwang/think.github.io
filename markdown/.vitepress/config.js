@@ -121,6 +121,7 @@ export default withMermaid({
             items: [
             { text: '基本知识', link: '/clang/level-1/index' },
             { text: '循环语句', link: '/clang/level-1/loop' },
+            { text: 'Demo', link: '/clang/level-1/demo' },
             ]
           },
           {
