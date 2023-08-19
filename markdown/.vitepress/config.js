@@ -264,7 +264,61 @@ export default withMermaid({
                 { text: '02', link: '/scratch/level-1/courses/02' },
                 { text: '03', link: '/scratch/level-1/courses/03' }
               ]
+            },
+            ]
           },
+          {
+            text: '二级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '考级大纲', link: '/scratch/level-2/examination_outline' },
+            { 
+              text: '课程大纲',  
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: '01', link: '/scratch/level-2/courses/01' },
+                { text: '02', link: '/scratch/level-2/courses/02' },
+                { text: '03', link: '/scratch/level-2/courses/03' }
+              ]
+            },
+            ]
+          },
+          {
+            text: '三级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '考级大纲', link: '/scratch/level-3/examination_outline' },
+            { 
+              text: '课程大纲',  
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: '01', link: '/scratch/level-3/courses/01' },
+                { text: '02', link: '/scratch/level-3/courses/02' },
+                { text: '03', link: '/scratch/level-3/courses/03' }
+              ]
+            },
+            ]
+          },
+          {
+            text: '四级课程',
+            collapsible: true,
+            collapsed: true,
+            items: [
+            { text: '考级大纲', link: '/scratch/level-4/examination_outline' },
+            { 
+              text: '课程大纲',  
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: '01', link: '/scratch/level-4/courses/01' },
+                { text: '02', link: '/scratch/level-4/courses/02' },
+                { text: '03', link: '/scratch/level-4/courses/03' }
+              ]
+            },
             ]
           },
         ]
