@@ -248,45 +248,28 @@ export default withMermaid({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: '介绍', link: '/scratch/index' },
+          { text: '考级介绍', link: '/scratch/index' },
           {
             text: '一级课程',
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/scratch/level-1/index' },
-            { text: '基本知识', link: '/scratch/level-1/index' },
-            ]
+            { text: '考级大纲', link: '/scratch/level-1/examination_outline' },
+            { 
+              text: '课程大纲',  
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: '01', link: '/scratch/level-1/courses/01' },
+                { text: '02', link: '/scratch/level-1/courses/02' },
+                { text: '03', link: '/scratch/level-1/courses/03' }
+              ]
           },
-          {
-            text: '二级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/scratch/level-2/index' },
-            ]
-          },
-          {
-            text: '三级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/scratch/level-3/index' },
-            ]
-          },
-          {
-            text: '四级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/scratch/level-4/index' },
             ]
           },
         ]
-      },
-
+      }
     ],
-		
 		footer: {
 			license: {
 				text: 'MIT License',
