@@ -109,11 +109,36 @@ export default withMermaid({
 	themeConfig: {
 		sidebar: [
       {
-        text: '教务管理',
+        text: '公开课',
         collapsible: true,
         collapsed: true,
         items: [
-          { text: '课程表', link: '/class/classlists' },
+          { text: '带你走进编程世界I', link: '/open/code1' },
+          { text: '带你走进编程世界II', link: '/open/code2' },
+        ]
+      },
+      {
+        text: '数据结构',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '00.前言', link: '/datastructure/index' },
+        ]
+      },
+      {
+        text: '系统编程',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '00.前言', link: '/systemprogramming/index' },
+        ]
+      },
+      {
+        text: '操作系统',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '00.前言', link: '/operatingsystem/index' },
         ]
       },
       {
@@ -121,35 +146,35 @@ export default withMermaid({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: '介绍', link: '/clang/index' },
+          { text: '介绍', link: '/c++/index' },
           {
             text: '一级课程',
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '00. 课程整体的介绍', link: '/clang/level-1/index' },
-            { text: '01. 入门基础', link: '/clang/level-1/01.base' },
-            { text: '02. 顺序结构', link: '/clang/level-1/02.sequence' },
-            { text: '03. 顺序结构', link: '/clang/level-1/03.if' },
-            { text: '04. 循环语句I', link: '/clang/level-1/04.loop' },
-            { text: '05. 循环语句II', link: '/clang/level-1/05.loop' },
-            { text: '06. 阶段测试与总结', link: '/clang/level-1/06.test' },
-            { text: '07. 数组', link: '/clang/level-1/07.array' },
-            { text: '08. 字符串', link: '/clang/level-1/08.array' },
-            { text: '09. 结构体', link: '/clang/level-1/09.array' },
-            { text: '10. 指针', link: '/clang/level-1/10.point' },
-            { text: '11. 排序', link: '/clang/level-1/11.sort' },
-            { text: '12. 查找', link: '/clang/level-1/12.find' },
-            { text: '13. 函数I', link: '/clang/level-1/13.func' },
-            { text: '14. 函数II', link: '/clang/level-1/14.func' },
-            { text: '15. 阶段测试与总结', link: '/clang/level-1/15.test' },
-            { text: '16. 位运算', link: '/clang/level-1/16.bit' },
-            { text: '17. 数学算法I', link: '/clang/level-1/17.math' },
-            { text: '18. 数学算法II', link: '/clang/level-1/18.math' },
-            { text: '19. Trick', link: '/clang/level-1/19.trick' },
-            { text: '20. 阶段测试与总结', link: '/clang/level-1/20.test' },
-            { text: 'NOIP C++大纲', link: '/clang/level-1/00.noip' },
-            { text: 'Demo', link: '/clang/level-1/demo' },
+            { text: '00. 课程整体的介绍', link: '/c++/level-1/index' },
+            { text: '01. 入门基础', link: '/c++/level-1/01.base' },
+            { text: '02. 顺序结构', link: '/c++/level-1/02.sequence' },
+            { text: '03. 顺序结构', link: '/c++/level-1/03.if' },
+            { text: '04. 循环语句I', link: '/c++/level-1/04.loop' },
+            { text: '05. 循环语句II', link: '/c++/level-1/05.loop' },
+            { text: '06. 阶段测试与总结', link: '/c++/level-1/06.test' },
+            { text: '07. 数组', link: '/c++/level-1/07.array' },
+            { text: '08. 字符串', link: '/c++/level-1/08.array' },
+            { text: '09. 结构体', link: '/c++/level-1/09.array' },
+            { text: '10. 指针', link: '/c++/level-1/10.point' },
+            { text: '11. 排序', link: '/c++/level-1/11.sort' },
+            { text: '12. 查找', link: '/c++/level-1/12.find' },
+            { text: '13. 函数I', link: '/c++/level-1/13.func' },
+            { text: '14. 函数II', link: '/c++/level-1/14.func' },
+            { text: '15. 阶段测试与总结', link: '/c++/level-1/15.test' },
+            { text: '16. 位运算', link: '/c++/level-1/16.bit' },
+            { text: '17. 数学算法I', link: '/c++/level-1/17.math' },
+            { text: '18. 数学算法II', link: '/c++/level-1/18.math' },
+            { text: '19. Trick', link: '/c++/level-1/19.trick' },
+            { text: '20. 阶段测试与总结', link: '/c++/level-1/20.test' },
+            { text: 'NOIP C++大纲', link: '/c++/level-1/00.noip' },
+            { text: 'Demo', link: '/c++/level-1/demo' },
             ]
           },
           {
@@ -157,7 +182,7 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/clang/level-2/index' },
+            { text: '基本知识', link: '/c++/level-2/index' },
             ]
           },
           {
@@ -165,7 +190,7 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/clang/level-3/index' },
+            { text: '基本知识', link: '/c++/level-3/index' },
             ]
           },
           {
@@ -173,7 +198,7 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/clang/level-4/index' },
+            { text: '基本知识', link: '/c++/level-4/index' },
             ]
           },
           {
@@ -181,7 +206,7 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/clang/level-5/index' },
+            { text: '基本知识', link: '/c++/level-5/index' },
             ]
           },
           {
@@ -189,7 +214,7 @@ export default withMermaid({
             collapsible: true,
             collapsed: true,
             items: [
-            { text: '基本知识', link: '/clang/level-6/index' },
+            { text: '基本知识', link: '/c++/level-6/index' },
             ]
           },
         ]
@@ -290,6 +315,15 @@ export default withMermaid({
             { text: '基本知识', link: '/scratch/level-4/index' },
             ]
           },
+        ]
+      },
+      {
+        text: '教务管理',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '课程表', link: '/class/classlists' },
+          { text: '师说', link: '/class/index' },
         ]
       },
 
