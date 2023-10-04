@@ -326,6 +326,16 @@ export default withMermaid({
           { text: '师说', link: '/class/index' },
         ]
       },
+      {
+        text: 'arduino',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'arduino', link: '/arduino/index' },
+          { text: 'UART串口原理', link: '/arduino/uart'},
+          { text: 'GPIO控制继电器', link: '/arduino/gpio' },
+        ]
+      }
 
     ],
 		
