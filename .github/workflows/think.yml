@@ -13,7 +13,8 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        npm install
+        npm install -g yarn
+        yarn
         npm run-script build
         cd ./markdown/.vitepress/dist
         echo 'think.leix.wang' > CNAME
