@@ -79,6 +79,21 @@ UART 全称Universal Asynchronous Receiver/Transmitter，通用异步收/发器�
 ![](../public/images/arduino/uart1.jpeg)
 
 
+
+
+### 硬件流控制
+
+硬件流控制常用的有RTS/CTS流控制和DTR/DSR（数据终端就绪/数据设置就绪）流控制。
+
+硬件流控制必须将相应的电缆线连上，用RTS/CTS（请求发送/清除发送）流控制时，应将通讯两端的RTS、CTS线对应相连，数据终端设备（如计算机）使用RTS来起始调制解调器或其它数据通讯设备的数据流，而数据通讯设备（如调制解调器）则用CTS来起动和暂停来自计算机的数据流。这种硬件握手方式的过程为：我们在编程时根据接收端缓冲区大小设置一个高位标志（可为缓冲区大小的75％）和一个低位标志（可为缓冲区大小的25％），当缓冲区内数据量达到高位时，我们在接收端将CTS线置低电*（送逻辑0），当发送端的程序检测到CTS为低后，就停止发送数据，直到接收端缓冲区的数据量低于低位而将CTS置高电*。RTS则用来标明接收设备有没有准备好接收数据。
+
+常用的流控制还有还有DTR/DSR（数据终端就绪/数据设置就绪）。我们在此不再详述。由于流控制的多样性，我个人认为，当软件里用了流控制时，应做详细的说明，如何接线，如何应用。
+
+`RTS`:（Require ToSend，发送请求）为输出信号，用于指示本设备准备好可接收数据，低电*有效，低电*说明本设备可以接收数据。
+
+`CTS`:（Clear ToSend，发送允许）为输入信号，用于判断是否可以向对方发送数据，低电*有效，低电*说明本设备可以向对方发送数据。
+
+
 ### UART协议帧
 
 在 UART中，传输模式为数据包形式。数据包由起始位、数据帧、奇偶校验位和停止位组成。
@@ -163,20 +178,35 @@ UART 全称Universal Asynchronous Receiver/Transmitter，通用异步收/发器�
 
 ## 开发板联接方式
 
+下面是用pc机联接开发板的图, 开发板芯片之间的整理连接图. 
+
+![](../public/images/arduino/uartusbpc.drawio.png)
+
+### ESP32芯片相关的图
 ![](../public/images/arduino/eps32wroom32.png)
 
+`ESP32` 芯片的解剖图, 会看到芯片里的结构和每个针脚的功能.
 
 ![](../public/images/arduino/esp.png)
+
+`ESP32` 针脚说明图.
+
+1. 蓝色块内的针脚是用于连接到串口的 RX 和 TX 通信针脚.
+2. 紫色块内的针脚是用于连接到串口的 RTS 和 CTS 控制针脚。
+
 
 
 ![](../public/images/arduino/esp32cp2102.png)
 
+`ESP32` 芯片的原理图.
 
 
+
+### CP2102芯片相关的图
 
 ![](../public/images/arduino/cp21021.png)
 
-1. 蓝色块内的针脚是用接到ESP32的uart串口0上, TX0和RX0分别接到了ESP32针脚35和34上。
+1. 蓝色块内的针脚是用接到 ESP32 的 uart 串口0上, TX0 和 RX0 分别接到了 ESP32针脚35和34上。
 2. 紫色块内的针脚也用接到ESP32的IO3和IO5上, ESP32针脚16和23上。
 3. 红色块内的针脚是用于接USB相关的针脚上.
 4. 红色块内中绿色块的是用于连接到MircoUSB针脚上的。
@@ -185,12 +215,12 @@ UART 全称Universal Asynchronous Receiver/Transmitter，通用异步收/发器�
 
 ![](../public/images/arduino/cp2102esp32.png)
 
-
-
+`CP2102` 芯片的原理图, 这块主要是与 `ESP32` 芯片进行串口通信的。
 
 
 ![](../public/images/arduino/cp21023.png)
 
+`CP2102` 芯片给出的官方电路图
 
 
 
