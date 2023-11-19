@@ -16,5 +16,6 @@
     "mermaid": "^10.2.4",
     "vitepress": "^1.0.0-rc.20",
     "vitepress-plugin-mermaid": "^2.0.13"
-  }
+  },
+  "type": "module"
 }
