@@ -123,6 +123,7 @@ export default withMermaid({
         collapsed: true,
         items: [
           { text: '00.前言', link: '/datastructure/index' },
+          { text: '01.链表', link: '/datastructure/link' },
         ]
       },
       {
@@ -318,6 +319,25 @@ export default withMermaid({
         ]
       },
       {
+        text: 'arduino',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '0.Arduino ESP32', link: '/arduino/index' },
+          { text: '1.UART串口原理', link: '/arduino/1.uart'},
+          { text: '2.UART代码分析', link: '/arduino/2.uart'},
+          { text: '3.LED', link: '/arduino/3.led' },
+          { text: '4.GPIO控制继电器', link: '/arduino/4.gpio' },
+          { text: '5.DHT11温湿度传感器', link: '/arduino/5.dht11' },
+          { text: '6.BEEP', link: '/arduino/6.beep' },
+          { text: '7.KEY', link: '/arduino/7.key' },
+          { text: '8.PWM', link: '/arduino/pwm' },
+          { text: '9.RGB LED', link: '/arduino/rgbled' },
+          { text: '10.EEPROM', link: '/arduino/e2prom' },
+          { text: '智能花盆项目', link: '/arduino/smartflowerpot' },
+        ]
+      },
+      {
         text: '教务管理',
         collapsible: true,
         collapsed: true,
@@ -326,17 +346,6 @@ export default withMermaid({
           { text: '师说', link: '/class/index' },
         ]
       },
-      {
-        text: 'arduino',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: 'arduino', link: '/arduino/index' },
-          { text: 'UART串口原理', link: '/arduino/uart'},
-          { text: 'GPIO控制继电器', link: '/arduino/gpio' },
-        ]
-      }
-
     ],
 		
 		footer: {
