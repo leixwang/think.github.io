@@ -39,6 +39,9 @@
 
 
 
+## 参考文档
 
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/index.html)
+- [用Rust写一个操作系统](https://os.phil-opp.com/zh-CN/)
 
 

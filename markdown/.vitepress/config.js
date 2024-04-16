@@ -124,6 +124,15 @@ export default withMermaid({
         items: [
           { text: '00.前言', link: '/datastructure/index' },
           { text: '01.链表', link: '/datastructure/link' },
+          { text: '二叉树', link: '/datastructure/binarytree' },
+          { text: '线索二叉树', link: '/datastructure/cluetree' },
+          { text: '二叉排序树', link: '/datastructure/binarysearchtree' },
+          { text: '平衡二叉树(AVL)', link: '/datastructure/avltree' },
+          { text: '哈夫曼树', link: '/datastructure/hafmantree' },
+          { text: '红黑树', link: '/datastructure/redtree' },
+          { text: '散列表', link: '/datastructure/hashtable' },
+          { text: '排序', link: '/datastructure/sort' },
+
         ]
       },
       {
@@ -140,6 +149,7 @@ export default withMermaid({
         collapsed: true,
         items: [
           { text: '00.前言', link: '/operatingsystem/index' },
+          { text: '01.开发环境搭建', link: '/operatingsystem/qemu' },
         ]
       },
       {
