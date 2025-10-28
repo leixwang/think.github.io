@@ -92,6 +92,16 @@ const customElements = [
 ];
 
 export default withMermaid({
+  head: [
+    [
+      'link',
+      { rel: 'icon', type: "image/x-icon", href: '/favicon.ico' }
+    ],
+    [
+      'link',
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }
+    ]
+  ],
   // your existing vitepress config...
   title: 'TuringThink',
   description: 'TuringThink 是一家领先的少儿编程教育公司，致力于激发创造力,逻辑思维能力和多维度的学习能力。通过有趣而实践的课程，我们帮助学生掌握编程技能并培养他们解决问题的能力。',
