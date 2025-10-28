@@ -236,8 +236,8 @@ export default withMermaid({
         collapsed: true,
         items: [
           { text: '教学大纲', link: '/python/index' },
-          { text: '课程设计说明', link: '/python/' },
-          { text: '介绍', link: '/python/index' },
+          { text: '课程设计说明', link: '/python/introduction.md' },
+          { text: '学习的收获', link: '/python/success.md' },
           {
             text: '初级课程',
             collapsible: true,
