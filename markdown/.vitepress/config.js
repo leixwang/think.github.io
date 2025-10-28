@@ -235,6 +235,8 @@ export default withMermaid({
         collapsible: true,
         collapsed: true,
         items: [
+          { text: '教学大纲', link: '/python/index' },
+          { text: '课程设计说明', link: '/python/' },
           { text: '介绍', link: '/python/index' },
           {
             text: '初级课程',
@@ -289,30 +291,6 @@ export default withMermaid({
             { text: '第八节课', link: '/python/level-3/class08.md' },
             { text: '第九节课', link: '/python/level-3/class09.md' },
             { text: '第十节课', link: '/python/level-3/class10.md' },
-            ]
-          },
-          {
-            text: '四级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/python/level-4/index' },
-            ]
-          },
-          {
-            text: '五级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/python/level-5/index' },
-            ]
-          },
-          {
-            text: '六级课程',
-            collapsible: true,
-            collapsed: true,
-            items: [
-            { text: '基本知识', link: '/python/level-6/index' },
             ]
           },
         ]
